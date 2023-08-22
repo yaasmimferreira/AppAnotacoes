@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-titulo: #fff;
+    --cor-azul: #1B3795;
+}
+
+
+
+/*cabeçalho*/
+body {
+    font-family: 'Concert One';
+    margin: 0;
+    padding: 0;
+}
+
+body img {
+    height: 50%;
+    margin-top: 13px;
+    padding: 5px;
+}
+
+.header img{
+    margin-top: -4px;
+    margin-left: 115px; 
+}
+
+
+
+.nav-list button{
+    margin: -14px auto;
+}
+
+
+.my-header {
+    /* Estilos para o novo cabeçalho */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    /* Outros estilos... */
+}
+
+.my-header h1 {
+    font-size: 24px;
+}
+
+/* Outros estilos para o novo cabeçalho... */
+
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    background: #f1eded;
+    color: black;
+    display: flex;
+    height: 70px;
+    padding: 0 20px;
+}
+
+header h1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 25px;
+    padding: 0;
+    display: flex;
+    color: black;
+}
+
+nav li {
+    margin: 0 10px;
+    align-items: flex-start;
+}
+
+nav a {
+    color: black;
+    font-family: 'Concert One';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.banner {
+    background: linear-gradient(32deg, #6151b9 0%, #ED50B4 100%);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: space;
+}
+
+h2{
+    font-family: 'Concert One';
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    margin-right: 78px;
+}
+
+.header button {
+    position: absolute;
+    right: 31%;
+    margin-top: -30px;
+
+}
+
+.inserirTexto {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    
+}
+
+
+.home {
+    border-radius: 7px;
+    border: 8px;
+    background: #5b41a7;
+    color: var(--cor-titulo);
+    font-size: 21px;
+    padding: 12px;
+    margin-left: 666px;
+    margin-top: 10px;
+}
+
+.home:hover{
+    background-color: #ED50B4;
+    cursor: pointer;
+}
+
+.inserir {
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+}
+
+button {
+    width: 10%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.inserir img {
+    width: 25px;
+}
+
+.lista img {
+    width: 25px;
+
+}
+
+.linha {
+    border-bottom: 1px solid black;
+    width: 559px;
+    margin: 0 auto;
+}
+
+.divLi {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    /* box-shadow: 6px 5px 10px 0px grey; */
+    background-color: lightgray;
+    display: flex;
+    margin: 15px auto;
+    width: 40%;
+}
+
+.divLi span {
+    width: 80%;
+    color: dimgray;
+    font-family: 'Concert One';
+    font-size: 19px;
+    margin: 0px 9px;
+}
+
+.divLi input {
+    outline: none;
+    accent-color: currentcolor;
+}
+
+.divLi i {
+    font-size: 22px;
+    color: brown;
+}
+
+
+.line-through {
+    text-decoration: line-through;
+}
+
+
+
+
+
+@media (max-width: 775px) {
+    input {
+        width: 70%;
+    }
+
+    .divInsert button {
+        width: 30%;
+    }
+
+    i {
+        font-size: 30px;
+        padding: 0px;
+    }
+
+    p {
+        font-size: x-large;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Adicione aqui suas regras de CSS para telas menores */
+    .banner {
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inserir {
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+    }
+
+    button {
+        width: 112%;
+    }
+}
+
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .input {
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    outline: none;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    background-color: #7e4fd4;
+    box-shadow: 0px 0px 3px #f3f3f3;
+    padding-right: 40px;
+    color: black;
+  }
+  
+  .input::placeholder,
+  .input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+  }
+  
+  .input::placeholder {
+    color: #8f8f8f;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    pointer-events: painted;
+    background-color: transparent;
+    transition: .2s linear;
+  }
+  
+  .icon:focus ~ .input,
+  .input:focus {
+    box-shadow: none;
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #7e4fd4;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  
+  
+  
+
+@media screen and (max-width: 360px) {
+    /* Adicione aqui suas regras de CSS para telas menores que 360px */
+    .banner {
+        padding: 10px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+    .inserir {
+        flex-direction: column;
+        align-items: center;
+    }
+    .inserirTexto {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
